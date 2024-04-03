@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | Blog preview card</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="card">
-      <img
-        src="/assets//images/illustration-article.svg"
-        style="border-radius: 10px"
-      />
-      <div class="lightContent">Learning</div>
-      <div>
-        <p>Published 21 Dec 2023</p>
-        <h1>HTML & CSS foundations</h1>
-        <p style="color: #7f7f7f">
-          These Languages are backbone of very website, defining structure,
-          content and presentation.
-        </p>
-      </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Blog preview card</title>
 
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-        "
-      >
-        <img
-          src="/assets/images/image-avatar.webp"
-          style="width: 32px; height: 32px; margin-right: 10px;"
-        />
-        <p>Greg Hooper</p>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <figure class="card__picture">
+      <img src="assets/images/illustration-article.svg" alt="imagen portada" class="card__img" />
+    </figure>
+  
+    <div class="card__texts">
+      <h6 class="card__text">Learning</h6>
+      <time class="card__date" datetime="2023-12-21T12:00:00-05:00">Published 21 Dec 2023</time>
+      <h3 class="card__text1-format">HTML & CSS foundations</h3>
+      <p class="card__text2"> These languages are the backbone of every website, defining structure, content, and
+        presentation.
+      </p>
+      <div class="card__person">
+        <img src="assets/images/image-avatar.webp" alt="person pic" class="card__person__img">
+
+        <h3 class="card__person__name">Greg Hooper</h3>
       </div>
     </div>
-  </body>
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">@Jersy Fernandes</a>.
+  </div>
+</body>
+
 </html>
